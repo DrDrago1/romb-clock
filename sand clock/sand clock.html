@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .linie{
+            background-color: black;
+            width: 175px;
+            height: 15px;
+            margin: 10px;
+        }
+        .b{
+            transform: translateY(-20px)
+        }
+       .top{
+           width: 0px;
+           height: 0px;
+           border-top: 150px solid black;
+           border-right: 75px solid transparent;
+           border-left: 75px solid transparent;
+           margin-left: 20px;
+       }
+       #s-top{
+        width: 0px;
+           height: 0px;
+           border-top: 100px solid white;
+           border-right: 50px solid transparent;
+           border-left: 50px solid transparent;
+           transform: translateX(-50px)translateY(-120px);
+           animation: t-sand 5s 20;
+       }
+       @keyframes t-sand{
+           from{
+            width: 0px;
+           height: 0px;
+           border-top: 100px solid white;
+           border-right: 50px solid transparent;
+           border-left: 50px solid transparent;
+           transform: translateX(-50px)translateY(-120px);
+           }
+           to{
+            width: 0px;
+           height: 0px;
+           border-top: 0px solid white;
+           border-right: 0px solid transparent;
+           border-left: 0px solid transparent;
+           transform: translateX(0px)translateY(-10px);
+           }
+       }
+       .bottom{
+           width: 0px;
+           height: 0px;
+           border-bottom: 150px solid black;
+           border-right: 75px solid transparent;
+           border-left: 75px solid transparent;
+           transform: translateY(-20px);
+           margin-left: 20px;
+       }
+       #s-bottom{
+        width: 0px;
+           height: 0px;
+           border-bottom: 100px solid white;
+           border-right: 60px solid transparent;
+           border-left: 60px solid transparent;
+           transform: translateX(-60px)translateY(40px);
+           animation: b-sand 5s 20;
+       }
+       @keyframes b-sand{
+           from{
+            width: 0px;
+           height: 0px;
+           border-bottom: 0px solid white;
+           border-right: 30px solid transparent;
+           border-left: 30px solid transparent;
+           
+           transform: translateX(-30px)translateY(140px);
+           }
+           
+           
+           to{
+            width: 0px;
+           height: 0px;
+           border-bottom: 100px solid white;
+           border-right: 60px solid transparent;
+           border-left: 60px solid transparent;
+           transform: translateX(-60px)translateY(40px);
+           }
+       }
+       #rotate{
+           animation: rrot 5s 20;
+           margin: 150px;
+           height: 330px;
+           width: 195px;
+       }
+       @keyframes rrot{
+           from{
+
+           }
+           80%{
+               transform: rotate(0deg);
+           }
+           to{
+             transform: rotate(180deg)
+           }
+       }
+    </style>
+</head>
+<body>
+    <div id="rotate"><div class="linie"></div><div class="top"><div id="s-top"></div></div>
+    <div class="bottom"><div id="s-bottom"></div></div><div class="linie b"></div></div>
+</body>
+</html>

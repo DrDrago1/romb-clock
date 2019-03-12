@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        #principal{
+            width: 350px;
+            transform: translateX(100px)translateY(100px);
+            
+        }
+       .romb{
+           background-color:white;
+           border: 2px solid black;
+           width: 150px;
+           height: 150px;
+           margin: 10px;float: left; 
+           transform: rotate(45deg);
+        }
+        .top{
+            transform:translateX(221px)rotate(45deg)translateY(195px) ;
+        }
+        .right{
+            transform: translateY(113px)rotate(45deg)translateX(-48px)
+        }
+        .left{
+            transform: translateY(225px)rotate(45deg)translateX(38px)
+        }
+        .bottom{
+            transform: translateY(195px)translateX(-90px)rotate(45deg)
+        }
+        #ferrari{
+            transform: rotate(-45deg)translateX(14px)translateY(35px);
+            width: 100px;
+        }
+        #porshe{
+            transform: rotate(-45deg)translateX(-15px);
+            width: 190px;
+        }
+        #koenigseg{
+            transform: rotate(-45deg)translateX(14px)translateY(20px);
+            width: 100px;
+        }
+        #lamb{
+            transform: rotate(-45deg)translateX(5px)translateY(30px);
+            width: 120px;
+        }
+    </style>
+      
+</head>
+<body><div id="principal">
+    <div class="romb top"><img id="ferrari" src="ferrari.png" alt=""></div>
+    <div class="romb left"><img id="porshe" src="Porsche-logo.png" alt=""></div>
+    <div class="romb right"><img id="koenigseg" src="koenigseg.png" alt=""></div>
+    <div class="romb bottom"><img id="lamb" src="lamborghini.png" alt=""></div></div>
+</body>
+</html>
